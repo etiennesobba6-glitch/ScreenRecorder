@@ -117,6 +117,8 @@ class MainActivity : AppCompatActivity() {
         }
         val startBtn = Button(this).apply { text = "Demarrer" }
         val stopBtn = Button(this).apply { text = "Arreter" }
+        val fxBtn = Button(this).apply { text = "Activer effet de clic" }
+        fxBtn.setOnClickListener { startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)) }
 
         layout.addView(status)
         layout.addView(micBox)
@@ -129,6 +131,7 @@ class MainActivity : AppCompatActivity() {
         layout.addView(weightSpinner)
         layout.addView(startBtn)
         layout.addView(stopBtn)
+        layout.addView(fxBtn)
         setContentView(ScrollView(this).apply { addView(layout) })
 
         startBtn.setOnClickListener {
