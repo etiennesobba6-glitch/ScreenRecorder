@@ -7,7 +7,9 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
-        android:label="Screen Recorder"
+        android:label="Super Screen Recorder"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
         android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
 
         <activity
